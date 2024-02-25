@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="multiversion/common/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/default/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_10_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_11_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_12_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_13_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_13_R2/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_14_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_15_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_16_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_16_R2/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_16_R3/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_17_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_18_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_18_R2/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_19_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_19_R2/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_19_R3/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_20_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_20_R2/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_8_R2/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_8_R3/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_9_R1/src/main/java"/>
+	<classpathentry kind="src" path="multiversion/v1_9_R2/src/main/java"/>
+	<classpathentry kind="src" path="plugin/src/main/java"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

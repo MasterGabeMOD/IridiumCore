@@ -63,30 +63,30 @@ public class IridiumCore extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        setupMultiVersion();
-
+        
         if (!PaperLib.isSpigot() && !isTesting) {
-            // isSpigot returns true if the server is using spigot or a fork
-            getLogger().warning("CraftBukkit isn't supported, please use spigot or one of its forks");
+            getLogger().warning("CraftBukkit isn't supported, please use Spigot or one of its forks");
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
 
-        // Register plugin listeners
+        setupMultiVersion();
+
         registerListeners();
 
-        if (isTesting) return;
+        if (isTesting) {
+            return;
+        }
 
-        // Save data regularly
-        saveTask = Bukkit.getScheduler().runTaskTimerAsynchronously(this, this::saveData, 0, 20 * 60 * 5);
+        saveTask = Bukkit.getScheduler().runTaskTimerAsynchronously(this, this::saveData, 20L * 60 * 5, 20L * 60 * 5);
 
-        // Automatically update all inventories
+
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, () -> Bukkit.getServer().getOnlinePlayers().forEach(player -> {
             InventoryHolder inventoryHolder = player.getOpenInventory().getTopInventory().getHolder();
             if (inventoryHolder instanceof GUI) {
                 ((GUI) inventoryHolder).addContent(player.getOpenInventory().getTopInventory());
             }
-        }), 0, 1);
+        }), 20L, 20L); // Changed from 0, 1 to 20, 20 to reduce the frequency
     }
 
     /**
